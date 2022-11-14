@@ -1,0 +1,147 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+section {
+  position:relative;
+  width:100%;
+  min-height:100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+ width: 80px;
+
+}
+header ul {
+  position: relative;
+  display: flex;
+
+}
+header ul li{
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 70px;
+  text-decoration: none;
+
+}
+
+.conteudo {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center; }
+
+  .textBox {
+    width: 600px;
+  }
+
+  .imgBox {
+
+    width: 500px;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 110px;
+  }
+  h2{
+    color:#333;
+    font-size: 60px;
+    font-weight: 500;
+   }
+ 
+ span {
+  color: #017143;
+  font-size: 70px;
+  font-weight: 900;
+  }
+ 
+  p{
+   font-size: 16px;
+    }
+button {
+      background: #017143;
+      color: white;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      margin-top: 20px;
+      } 
+.starbucks{
+        width: 360px;
+ }
+.miniatura {
+  
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.botao-menu {
+  width: 85px;
+  transition: 1s;
+  cursor: pointer;
+  margin: 8px;
+}
+.botao-menu:hover
+  {
+    transform:translateY(-25px);
+  }
+.circulo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#017143;
+  top: 0;
+  left: 0;
+  clip-path: circle(685px at right 800px);
+  z-index: -1;
+  
+}
+.sci {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
+}

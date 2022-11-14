@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Starbucks</title>
+  </head>
+  <body>
+
+    <div class="circulo"></div>
+   
+      <header>
+      
+          <img src="./images/logo.png" alt="Logotipo" class="logo" />
+        </a>
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">Menu </a></li>
+          <li><a href="#">Whats New </a></li>
+          <li><a href="#">Contact </a></li>
+        </ul>
+      </header>
+
+      <div class="conteudo">
+        <div class="textBox">
+          <h2>
+            It's not just Coffee <br />
+            It's <span>Starbucks </span>
+          </h2>
+          <p>
+            Whether you're searching for something new to warm your mug, seeking
+            the best brew method for your favorite blend or exploring our rarest
+            offerings, you’ve come to the right place.
+          </p>
+          <a href="https://www.starbucks.com.br/" target="_blank"><button>Learn More!</button> </a>
+          </div>
+          <div class="imgBox">
+            <img
+              src="./images/img1.png"
+              alt="Bebida de Menta"
+              class="starbucks"
+            />
+          </div>
+        </div>
+      <div  class="miniatura">
+        <img
+          src="./images/thumb1.png"  class="botao-menu" onclick="trocaImagem('./images/img1.png'); trocaCor('#eb7495')" />
+        <img
+          src="./images/thumb2.png"  class="botao-menu" onclick="trocaImagem('./images/img2.png'); trocaCor('#017143')"/>
+        <img
+          src="./images/thumb3.png"
+          class="botao-menu" onclick="trocaImagem('./images/img1.png'); trocaCor('#d752b1')"/>
+      </div>
+      <ul class="sci">
+        <li> <a href="#"> <img src="./images/instagram.png"></a></li>
+        <li> <a href="#"> <img src="./images/twitter.png"></a></li>
+      </ul>
+<script>
+
+imagem = document.querySelector(".starbucks")
+circulo = document.querySelector('.circulo')
+
+  function trocaImagem(endereco) {
+  imagem.src = endereco
+
+  }
+
+  function trocaCor(cor) { 
+      circulo.style.background = cor
+  }
+
+
+</script>
+  </body>
+</html>
